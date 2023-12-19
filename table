@@ -67,3 +67,18 @@ VALUES( 'Scienze', 'Via poldo 77', 78365, 'scienze@gmail.com', 'www.scienze.com'
 INSERT INTO departments
 ( name, address, phone, email, website, head_of_departments)
 VALUES( 'Filosofia', 'Via achille 55', 47475, 'filo@gmail.com', 'www.filosofia.com', '5');
+
+
+-- modificare un record
+INSERT INTO departments
+( name, address, phone, email, website, head_of_departments)
+VALUES( 'Anna', 'Via apollo 7', 32622, 'anna@gmail.com', 'www.anna.com', '9');
+
+UPDATE departments
+SET name='Storia', address='Via giulio cesare', phone=32626, email='julio@gmail.com', website='www.storia.com', head_of_departments='6'
+WHERE id=6;
+
+
+-- eliminare un record
+DELETE FROM departments
+WHERE id=6;
