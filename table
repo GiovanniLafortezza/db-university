@@ -1,0 +1,13 @@
+CREATE DATABASE `db_university_schema`;
+USE `db_university_schema`;
+
+CREATE TABLE departments(
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(50) NOT NULL,
+	address VARCHAR(150) NOT NULL,
+	phone INT NOT NULL,
+	email VARCHAR(255) NULL,
+	website VARCHAR(255) NULL,
+	head_of_departments VARCHAR(255) null,
+	PRIMARY KEY(id)
+);
