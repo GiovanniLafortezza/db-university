@@ -11,3 +11,13 @@ CREATE TABLE departments(
 	head_of_departments VARCHAR(255) null,
 	PRIMARY KEY(id)
 );
+
+CREATE TABLE `degrees`(
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(100) NOT NULL,
+	`level` TINYINT NULL,
+	address VARCHAR(150) NULL,
+	website VARCHAR(255) NULL,
+	email VARCHAR(255) NULL,
+	PRIMARY KEY(id)
+);
