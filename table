@@ -104,3 +104,28 @@ VALUES( 'automazione', 30, '', '', '', 1);
 INSERT INTO `degrees`
 ( name, `level`, address, website, email, department_id)
 VALUES( 'grammatica', 9, '', '', '', 5);
+
+
+-- inserire dati a students
+INSERT INTO db_university_schema.students
+( name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degrees_id)
+VALUES( 'Franco', 'Bagno', '1944/05/07', 'HDUS798S9D', '2003/09/22', 54, 'franco@gmail.com', 1);
+
+INSERT INTO db_university_schema.students
+( name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degrees_id)
+VALUES( 'Anna', 'Ornella', '2003/06/21', 'G6FGF886B', '2023/12/19', 88, '', 3);
+
+INSERT INTO db_university_schema.students
+( name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degrees_id)
+VALUES( 'Martina', 'Esposito', '2000/01/30', 'BG78F99', '2020/10/12', 67, '', 5);
+
+INSERT INTO db_university_schema.students
+( name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degrees_id)
+VALUES( 'Federica', 'Ginnasio', '2001/11/01', 'FSG80G', '2022/09/28', 71, '', 2);
+
+INSERT INTO db_university_schema.students
+( name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email, degrees_id)
+VALUES( 'Sara', 'Comastri', '1998/07/09', 'VXVVX78', '2022/10/02', 74, '', 4);
+
+DELETE FROM db_university_schema.students
+WHERE id=2;
