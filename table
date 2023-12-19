@@ -47,7 +47,7 @@ ADD COLUMN degrees_id INT;
 ALTER TABLE students 
 ADD FOREIGN KEY(degrees_id) REFERENCES `degrees`(id);
 
--- inserimento dati
+-- inserimento dati a departments
 INSERT INTO departments
 ( name, address, phone, email, website, head_of_departments)
 VALUES( 'Elettronica', 'Via giacomo secondo', 33959668, 'elettr@gmail.com', 'www.elettrico.com', '1');
@@ -82,3 +82,25 @@ WHERE id=6;
 -- eliminare un record
 DELETE FROM departments
 WHERE id=6;
+
+
+-- inserire dati a degrees
+INSERT INTO `degrees`
+( name, `level`, address, website, email, department_id)
+VALUES( 'geometria', 28, '', '', '', 2);
+
+INSERT INTO `degrees`
+( name, `level`, address, website, email, department_id)
+VALUES( 'letteratura', 25, '', '', '', 5);
+
+INSERT INTO `degrees`
+( name, `level`, address, website, email, department_id)
+VALUES( 'sistemi', 19, '', '', '', 1);
+
+INSERT INTO `degrees`
+( name, `level`, address, website, email, department_id)
+VALUES( 'automazione', 30, '', '', '', 1);
+
+INSERT INTO `degrees`
+( name, `level`, address, website, email, department_id)
+VALUES( 'grammatica', 9, '', '', '', 5);
