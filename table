@@ -46,3 +46,24 @@ ADD COLUMN degrees_id INT;
 
 ALTER TABLE students 
 ADD FOREIGN KEY(degrees_id) REFERENCES `degrees`(id);
+
+-- inserimento dati
+INSERT INTO departments
+( name, address, phone, email, website, head_of_departments)
+VALUES( 'Elettronica', 'Via giacomo secondo', 33959668, 'elettr@gmail.com', 'www.elettrico.com', '1');
+
+INSERT INTO departments
+( name, address, phone, email, website, head_of_departments)
+VALUES( 'Matematica', 'Via pinco pallo', 37547, 'math@gmail.com', 'www.math.com', '2');
+
+INSERT INTO departments
+( name, address, phone, email, website, head_of_departments)
+VALUES( 'Italiano', 'Via dante alighieri', 448747, 'italiano@gmail.com', 'www.italiano.com', '3');
+
+INSERT INTO departments
+( name, address, phone, email, website, head_of_departments)
+VALUES( 'Scienze', 'Via poldo 77', 78365, 'scienze@gmail.com', 'www.scienze.com', '4');
+
+INSERT INTO departments
+( name, address, phone, email, website, head_of_departments)
+VALUES( 'Filosofia', 'Via achille 55', 47475, 'filo@gmail.com', 'www.filosofia.com', '5');
